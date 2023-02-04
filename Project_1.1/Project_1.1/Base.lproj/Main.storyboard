@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wyw-Aj-jO9">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Batman App-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Backstory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmT-3q-vUq">
+                                <rect key="frame" x="158.66666666666666" y="388" width="76" height="21"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cKv-Cf-5Fb" appends="YES" id="tPT-tG-tyC"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strength" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg0-Tb-2NO">
+                                <rect key="frame" x="163.66666666666666" y="439" width="66" height="21"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weakness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-bB-Q92">
+                                <rect key="frame" x="157.66666666666666" y="490" width="78" height="21"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Batman_-_Justice_League_-_promo" translatesAutoresizingMaskIntoConstraints="NO" id="5g0-OX-xfG">
+                                <rect key="frame" x="96.666666666666686" y="153" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="phN-g3-gGw"/>
+                                    <constraint firstAttribute="height" constant="200" id="yiB-gb-bac"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OmT-3q-vUq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0yw-7z-JC7"/>
+                            <constraint firstItem="zg0-Tb-2NO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BjB-zz-Pq9"/>
+                            <constraint firstItem="zg0-Tb-2NO" firstAttribute="top" secondItem="OmT-3q-vUq" secondAttribute="bottom" constant="30" id="StY-6E-7B1"/>
+                            <constraint firstItem="5g0-OX-xfG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V1J-DE-XP9"/>
+                            <constraint firstItem="OmT-3q-vUq" firstAttribute="top" secondItem="5g0-OX-xfG" secondAttribute="bottom" constant="35" id="gik-XY-7tG"/>
+                            <constraint firstItem="mI7-bB-Q92" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jv4-ou-anK"/>
+                            <constraint firstItem="5g0-OX-xfG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="oyJ-Rd-cQy"/>
+                            <constraint firstItem="mI7-bB-Q92" firstAttribute="top" secondItem="zg0-Tb-2NO" secondAttribute="bottom" constant="30" id="tDe-2g-53b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Batman App" id="CWJ-NZ-moZ"/>
+                    <connections>
+                        <segue destination="GCL-E2-USM" kind="show" identifier="detailSegue" id="Lxo-Ds-6bK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cKv-Cf-5Fb"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="R8U-qA-QoK">
+            <objects>
+                <viewController id="GCL-E2-USM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S9B-IR-Ueq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PbP-hl-xZ1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a8A-2C-Cw7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tsW-oO-SVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1683" y="-2"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yQQ-Ar-52u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wyw-Aj-jO9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0B6-yL-WXl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ags-x5-rZc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcH-Zb-HpR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Batman_-_Justice_League_-_promo" width="1135" height="970"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
